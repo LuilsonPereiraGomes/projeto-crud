@@ -3,11 +3,13 @@ package br.com.crud.produtos.servico;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import br.com.crud.produtos.modelo.ProdutoModelo;
 import br.com.crud.produtos.modelo.RespostaModelo;
 import br.com.crud.produtos.repositorio.ProdutoRepositorio;
 
+@Service
 public class ProdutoServico {
   @Autowired
   private ProdutoRepositorio pr;
